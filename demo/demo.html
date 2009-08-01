@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>jQuery URL Shortener</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../code/shorten.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	
+	<h1>Test</h1>
+	<div id="replacethese">
+		<p>
+			<b>Old Url:</b> http://google.com<br />
+			<a href="http://google.com">Short URL</a>
+		</p>
+		
+		<p>
+			<b>Old Url:</b> http://friendfeed.com/bryceroney<br />
+			<a href="http://friendfeed.com/bryceroney">Short URL</a>
+		</p>
+		
+	</div>
+
+		
+<script type="text/javascript" charset="utf-8">
+var login = "bitlyapidemo";
+var apikey = "R_0da49e0a9118ff35f52f629d2d71bf07";
+
+	$(document).ready(function() {
+		$("#replacethese a").shorten({login: login, apikey: apikey});
+	});
+</script>
+</body>
